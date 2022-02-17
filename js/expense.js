@@ -54,7 +54,7 @@ document.getElementById('calculate-btn').addEventListener('click', function () {
 //calculate saving amount and remaing balance
 document.getElementById('save-btn').addEventListener('click', function () {
     const remainingBalance = getRemainingBalance();
-    if (isNaN(remainingBalance) || remainingBalance <= 0) {
+    if (isNaN(remainingBalance) || remainingBalance < 0) {
         document.getElementById('saving-alert-message').style.display = 'block';
     }
 
