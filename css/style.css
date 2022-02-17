@@ -1,0 +1,18 @@
+*{
+    font-family: 'Merriweather', serif;
+}
+.title-name{
+    color: orange;
+}
+.calculate-background{
+    background-color: rgb(250, 245, 245);
+    margin-top: 120px;
+}
+input{
+    border: none;
+    background-color: rgb(231, 226, 226);
+    border-radius: 3px;
+}
+#expense-balance-field{
+    display: none;
+}
