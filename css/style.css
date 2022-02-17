@@ -1,18 +1,68 @@
 *{
     font-family: 'Merriweather', serif;
 }
-.title-name{
+/* .title-name{
     color: orange;
+} */
+.display-design{
+    display: flex;
 }
 .calculate-background{
     background-color: rgb(250, 245, 245);
     margin-top: 120px;
+}
+.income-expense-feild{
+    text-align: right;
+}
+.income-text{
+    text-align: center;
+}
+.expense-text{
+    text-align: center;
 }
 input{
     border: none;
     background-color: rgb(231, 226, 226);
     border-radius: 3px;
 }
+.expense-calculate{
+    text-align: center;
+}
 #expense-balance-field{
     display: none;
+}
+#error-positive{
+    display: none;
+}
+/* #error-blank{
+    display: none;
+} */
+#alert-message{
+    display: none;
+}
+#saving-amount-field{
+    display: none;
+}
+#saving-alert-message{
+    display: none;
+}
+
+/* responsive design for mobile */
+@media only screen and (max-width:1195px){
+    .display-design{
+        display: block;
+    }
+    .income-expense-feild{
+        text-align: left;
+        padding-left: 10px;
+    }
+    .income-text{
+        text-align: left;
+    }
+    .expense-text{
+        text-align: left;
+    }
+    .expense-calculate{
+        text-align: left;
+    }
 }

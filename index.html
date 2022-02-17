@@ -22,7 +22,7 @@
     <header class="mt-5">
         <h1 class="text-center text-warning">Expense Tracker<i class="fa-solid fa-badge-dollar"></i></h1>
     </header>
-    <main class="d-flex me-5">
+    <main class="display-design me-5">
         <!-- title banner -->
         <div>
             <img src="images/rsz_expense.jpg" alt="">
@@ -31,38 +31,37 @@
         <div class=" pt-5  calculate-background">
             <div class="px-5 mt-4">
                 <!-- income and expense  -->
-                <div class="text-end">
+                <div class="income-expense-feild">
                     <!-- income section -->
                     <div>
-                        <h3 class="text-center fs-5 fw-bold">Income</h3>
+                        <h3 class="income-text fs-5 fw-bold">Income</h3>
                         <div class="mt-3 pe-4">
                             <label for="income-field">Income:</label>
-                            <input id="income-field" type="text">
+                            <input id="income-field" type="text">$
                         </div>
                     </div>
                     <!-- expense section -->
                     <div class="mt-3">
-                        <h3 class="text-center fs-5 fw-bold">Expences</h3>
+                        <h3 class="expense-text fs-5 fw-bold">Expences</h3>
                         <div class="pe-4">
                             <div class="mt-3">
                                 <label for="food-field">Food:</label>
-                                <input id="food-field" type="text">
+                                <input id="food-field" type="text">$
                             </div>
                             <div class="mt-3">
                                 <label for="rent-field">Rent:</label>
-                                <input id="rent-field" type="text">
+                                <input id="rent-field" type="text">$
                             </div>
                             <div class="mt-3">
                                 <label for="clothes-field">Clothes:</label>
-                                <input id="clothes-field" type="text">
+                                <input id="clothes-field" type="text">$
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- calculate expense -->
-                <div class="text-center mt-4">
+                <div class="expense-calculate mt-4">
                     <button id="calculate-btn" class="btn btn-warning text-white">Calculate</button>
-
                     <div id="expense-balance-field" class="mt-3 fw-bold">
                         <p>Total Expense:
                             <span id="total-expense">0</span>$
@@ -71,8 +70,11 @@
                         <p>Balance:
                             <span id="balance">0</span>$
                         </p>
-
                     </div>
+                    <p id="error-positive" class="fw-bold mt-3">Please enter positive number and fillup all feild</p>
+                    <!-- <p id="error-blank" class="fw-bold mt-3">Please fillup all the field</p> -->
+                    <p id="alert-message" class="fw-bold mt-3">Decrease your expense! Ohterwise you will become a begger
+                        soon!!</p>
                 </div>
             </div>
             <!-- calculate saving amount -->
@@ -81,15 +83,13 @@
                 <input id="save-percentage" type="text">
                 <span>%</span>
                 <button id="save-btn" class="btn btn-warning text-white">Save</button>
-                <div class="text-center fw-bold">
-                    <div id="saving-amount-field" class="mt-3 d-none">
-                        <p>Saving Amount:<span id="saving-amount">0</span>$</p>
+                <div id="saving-amount-field" class="text-center fw-bold mt-3">
+                    <p>Saving Amount: <span id="saving-amount">0</span>$</p>
 
-                    </div>
-                    <div id="remaining-balance-field" class="mt-3 d-none">
-                        <p>Remaining Balance:<span id="remaining-balance">0</span>$</p>
+                    <p class="mt-3">Remaining Balance: <span id="remaining-balance">0</span>$</p>
 
-                    </div>
+                    <p id="saving-alert-message" class="fw-bold mt-3">No balance required!!</p>
+
                 </div>
             </div>
         </div>
